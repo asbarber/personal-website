@@ -1,7 +1,7 @@
 import flask
 
-home = flask.Blueprint('home', __name__, template_folder="templates")
+home = flask.Blueprint('home', __name__, template_folder="views")
 
 @home.route('/home', methods = ['GET'])
 def getHome():
-	return "Hello Home"
+	return flask.render_template("home.html")

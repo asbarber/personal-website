@@ -8,21 +8,6 @@ sudo apt-get install libapache2-mod-wsgi
 # -----------------------------------------------------------------------------
 
 
-# CREATE VIRTUAL ENVIRONMENT 
-# -----------------------------------------------------------------------------
-sudo virtualenv venv
-source venv/bin/activate
-sudo pip install -r requirements.txt
-# -----------------------------------------------------------------------------
-
-
-# CLONE SOURCE
-# -----------------------------------------------------------------------------
-cd /var/www
-sudo git pull https://github.com/asbarber/personal-website app
-# -----------------------------------------------------------------------------
-
-
 # ADD HOST
 # -----------------------------------------------------------------------------
 sudo vim /etc/hosts
@@ -55,8 +40,25 @@ sudo vim /etc/apache2/app.conf
 # ENABLE SITES
 # -----------------------------------------------------------------------------
 # disable other sites (e.g. the default)
-# sudo a2dissite 000-default.conf 
+# 	sudo a2dissite 000-default.conf 
 sudo a2ensite app.conf 
+# -----------------------------------------------------------------------------
+
+
+# CREATE VIRTUAL ENVIRONMENT 
+# -----------------------------------------------------------------------------
+sudo virtualenv venv
+source venv/bin/activate
+sudo pip install -r requirements.txt
+# -----------------------------------------------------------------------------
+
+
+# CLONE SOURCE
+# -----------------------------------------------------------------------------
+cd /var/www
+sudo git clone https://github.com/asbarber/personal-website app
+# alternatively:
+# 	sudo git pull https://github.com/asbarber/personal-website app
 # -----------------------------------------------------------------------------
 
 

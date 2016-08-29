@@ -1,0 +1,16 @@
+body, html, .main {
+    height: 100%;
+}
+
+.parallax { 
+    background-image: url("../images/bg.jpg");
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cloud { 
+	color: #FF0;
+}

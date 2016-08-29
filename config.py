@@ -8,3 +8,5 @@ dev_config = {
 	"debug": True,
 	"port": 3000	
 }
+
+config = None
