@@ -2,6 +2,9 @@
 
 {% block content %}
 
+
+<!-- Parallax Image -->
+<!-- ================================================================================================================== -->
 <div class="parallax">
     <div class="parallax-inner">
         <i class="fa fa-4x fa-cloud cloud" aria-hidden="true"></i>
@@ -10,37 +13,312 @@
         <p>University of Michigan Student</p>       
     </div>
 </div>
+<!-- ================================================================================================================== -->
 
-<!-- One -->
-<div class="container">
+
+<!-- About Me -->
+<!-- ================================================================================================================== -->
+<div id="aboutme" class="container">
+    <div class="row">
+        <div class="col-xs-4">
+            <span class="image-bio"><img src="/static/images/me.jpg" alt="" /></span>
+            <p class="resume">
+                <a target="_blank" href="/static/res/resume.pdf"><i class="fa fa-2x fa-file-text-o"></i> Resume</a>
+            </p>
+        </div>
+        <div class="col-xs-8">
+            <header class="major">            
+                <h2>About Me</h2>
+            </header>            
+            <p>
+                I am obtaining my Master's degree in Computer Science at the University of Michigan. I completed my undergraduate degree in Computer Science Engineering at the University of Michigan. I am focusing my studies in artificial intelligence and security, but am strongly motivated by practical software engineering. I am most proud of my <a href="#">Assisted Video Editor</a> and <a href="#">Course Scheduler</a> projects. Teaching STEM to students is critical for the future, and I am taking part in the <a href="#ia492">education process</a>.
+            </p>
+            <p>
+                I wake up everyday with the intent to learn something new. Life is short, so I must cherish it while I can.
+            </p>
+        </div>        
+    </div>
+</div>
+<!-- ================================================================================================================== -->
+
+
+<!-- Education / Awards / Technical Skills -->
+<!-- ================================================================================================================== -->
+<div id="umich-education" class="container">
     <div class="row">
         <div class="col-xs-6">
             <header class="major">            
-                <h2>Yahoo Software Engineer</h2>
+                <h2>Computer Science (B.S.E.)</h2>
+                <h4>University of Michigan<h4>
+                <h6>September 2013 &mdash; April 2016<span>Ann Arbor, MI</span><h6>
             </header>
-            <p>Worked on an HTTPS proxy</p>
+            <p>
+                The University of Michigan presented opportunity for me to learn through courses, extracurricular, and research. 
+                I spent my first year in the undergraduate research opportunity program (UROP) where I contributed to the open-source project <a target="_blank" href="http://diirt.org/">diirt</a> for real-time graph rendering. 
+                During my second year, I participated in several hackathons including <a target="_blank" href="http://challengepost.com/software/myowntransaction">MHacks V</a>, in which my team won <a target="_blank" href="https://www.concur.com/newsroom/article/back-to-the-classroom-at-mhacks-v">several awards</a> including the Most Technically Challenging award from Andreessen Horowitz.
+                In my third and final year, I learned fundamentals of operating systems and security from two distinguished professors, <a target="_blank" href="http://web.eecs.umich.edu/~pmchen/">Peter Chen</a> and <a target="_blank" href="https://jhalderm.com/">Alex Halderman</a>. I was a mentor for Eta Kappa Nu (the honor society for IEEE) and a student instructor for an artificial intelligence course (EECS 492).
+                I was truly fortunate to graduate from one of the <a target="_blank" href="https://record.umich.edu/articles/u-m-maintains-ranking-among-nations-top-public-universities-0">world's best universities</a>.
+            </p>
+            <p>
+                Here is a overview of the courses I have taken:
+                <ul>
+                    <li>EECS 588 - Computer and Network Security</li>
+                    <li>EECS 492 - Introduction to Artificial Intelligence</li>
+                    <li>EECS 485 - Web Database and Information Systems</li>
+                    <li>EECS 482 - Introduction to Operating Systems</li>
+                    <li>EECS 481 - Software Engineering</li>
+                    <li>EECS 388 - Introduction to Computer Security</li>
+                    <li>EECS 376 - Foundations of Computer Science</li>
+                    <li>EECS 370 - Introduction to Computer Organization</li>
+                    <li>EECS 281 - Data Structures and Algorithms</li>
+                </ul>
+            </p>
+            <p>
+                I took several courses that improved my skills as an engineer and a researcher:
+                <ul>
+                    <li>TCHNCLCM 497 - Advanced Technical Communication</li>
+                    <li>EECS 399 - Directed Study (created a Windows phone app)</li>
+                    <li>PHYSICS 415 - Independent Study (wrote a async/sync wrapper library)</li>
+                    <li>MATH 217 - Linear Algebra (rigorous proof-based course)</li>
+                    <li>STATS 412 - Introduction to Probability &amp; Statistics</li>
+                </ul>
+            </p>     
         </div>
         <div class="col-xs-6">
-            <span class="image fit"><img src="/static/images/yahoo.jpg" alt="" /></span>
+            <header class="major">            
+                <h2>Computer Science (M.S.E.)</h2>
+                <h4>University of Michigan<h4>
+                <h6>September 2016 &mdash; April 2017<span>Ann Arbor, MI</span><h6>
+            </header>
+            <p>
+                My undergraduate degree at University of Michigan showed me how much I had to learn, and I returned for a Master's degree in Computer Science Engineering. I am currently in the process of obtaining my M.S.E. and am focusing on artificial intelligence and teaching. This Fall semester I am furthering my knowledge in natural language processing and game theory. I am a graduate student instructor for ENGR 101, and am teaching MATLAB and C++ to first-year engineering students.
+            </p>
+            <p>
+                Here is a overview of the courses I am taking:
+                <ul>
+                    <li>EECS 595 - Natural Language Processing</li>
+                    <li>EECS 583 - Advanced Compilers</li>
+                    <li>ECON 409 - Game Theory</li>
+                    <li>EECS 692 - Advanced Artificial Intelligence (Winter 2017)</li>
+                    <li>EECS 545 - Machine Learning (Winter 2017)</li>
+                    <li>EECS 586 - Design and Analysis of Algorithms  (Winter 2017)</li>
+                </ul>
+            </p>
         </div>
     </div>
 </div>
 
-<!-- Two -->
-<div class="container">
+<div id="skills-awards" class="container">
     <div class="row">
         <div class="col-xs-6">
             <header class="major">            
-                <h2>Assisted Video Editor</h2>
+                <h2>Programming Languages and Tools</h2>
             </header>
             <p>
-                Created a simplified video editor.
+                Although a critical trait of a computer scientist is to be able to <i>learn</i> new technologies/languages/frameworks, I would like to highlight some of the programming languages I am most familiar with:
+                <ul>
+                    <li>Java (5+ years of experience)</li>
+                    <li>C++ (4+ years of experience)</li>
+                    <li>Python (3+ years of experience)</li>
+                    <li>Javascript (3+ years of experience)</li>
+                    <li>C# (experience from several projects)</li>
+                    <li>SQL (experience from several projects)</li>
+                </ul>
+            </p>
+            <p>
+                Throughout coursework and personal projects, I have worked with many other languages:
+                <ul>
+                    <li>AngularJS</li>
+                    <li>C</li>
+                    <li>CSS</li>
+                    <li>LaTeX</li>
+                    <li>MATLAB</li>
+                    <li>Prolog</li>
+                    <li>Visual Basic</li>
+                </ul> 
+            </p>
+            <p>
+                I have worked with several computer tools and software:
+                <ul>
+                    <li>Blender</li>
+                    <li>Cordova / PhoneGap</li>
+                    <li>Git</li>
+                    <li>Jenkins</li>
+                    <li>JIRA</li>
+                    <li>Postman</li>
+                    <li>SEQUEL</li>
+                    <li>SPSS Statistics</li>
+                    <li>Specflow</li>
+                    <li>Team Foundation Server</li>
+                    <li>Unity</li>
+                    <li>Unix</li>
+                </ul>
+            </p>
+        </div>
+        <div class="col-xs-6">
+            <header class="major">            
+                <h2>Honors and Awards</h2>
+            </header>
+            <p>
+                Academic honors:
+                <ul>
+                    <li><b>Graduated Summa Cum Laude</b>, Winter 2016</li>
+                    <li><b>Dean's List,</b> University of Michigan, Winter 2016</li>
+                    <li><b>Dean's List,</b> University of Michigan, Fall 2015</li>
+                    <li><b>James B. Angell Scholar</b>, University of Michigan, April 2015</li>
+                    <li><b>Eta Kappa Nu Member,</b> University of Michigan, since Winter 2015</li>
+                    <li><b>Dean's List,</b> University of Michigan, Fall 2014</li>
+                    <li><b>Dean's List,</b> University of Michigan, Winter 2014</li>
+                    <li><b>Dean's List,</b> University of Michigan, Fall 2013</li>
+                    <li><b>Advanced Placement Scholar with Distinction,</b> College Board, 2013</li>
+                </ul>
+            </p>
+            <p>
+                Awards from hackathons:
+                <ul>
+                    <li><b>MHacks V, Most Technically Challenging,</b> Winter 2015</li>
+                    <li><b>MHacks V, Best Use of Concur API,</b> Winter 2015</li>
+                    <li><b>WolverineSoft Space Jam Hackathon, 6th place,</b> Winter 2014</li>
+                </ul>
+            </p>
+            <p>
+                Awards from Business Professionals of America:
+                <ul>
+                    <li><b>Java Programming, 8th place at National Conference,</b> 2013</li>
+                    <li><b>Project Management Concepts, 3rd place at National Conference,</b> 2013</li>
+                    <li><b>Visual Basic Programming, top ten at National Conference,</b> 2012</li>
+                </ul>
+            </p>  
+            <p>
+                Hackathons attended:
+                <ul>
+                    <li><b>MHacks VI,</b> Winter 2016</li>
+                    <li><b>Facebook Capture The Flag,</b> Winter 2015</li>
+                    <li><b>WolverineSoft Shammy Jam,</b> Winter 2015</li>
+                    <li><b>MHacks V,</b> Fall 2014</li>
+                    <li><b>Meeting of the Minds,</b> Fall 2014</li>
+                    <li><b>Barracuda Networking,</b> Fall 2014</li>
+                    <li><b>WolverineSoft Space Jam,</b> Winter 2014</li>
+                </ul>
+            </p>          
+        </div>
+    </div>
+</div>
+<!-- ================================================================================================================== -->
+
+
+<!-- Work Experience -->
+<!-- ================================================================================================================== -->
+<div id="yahoo" class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <header class="major">            
+                <h2>Software Engineering Intern</h2>
+                <h4>Yahoo Mail<h4>
+                <h6>May 2016 &mdash; August 2016<span>Sunnyvale, CA</span><h6>
+            </header>
+            <p>
+                Worked with a software architect to design and implement a solution to remove mixed content warnings from Yahoo emails. I implemented an HTTPS proxy to securely deliver HTTP content, such as images.  The solution included an O(n) algorithm to parse the HTML in emails to replaced mixed content with the HTTPS proxy. I learned integration testing, performance monitoring, and remote debugging techniques.
             </p>
         </div>
         <div class="col-xs-6">
             <span class="image fit"><img src="/static/images/yahoo.jpg" alt="" /></span>
+        </div>
+    </div>
+</div>
+
+<div id="ia492" class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <header class="major">            
+                <h2>Instructional Aide for</h2>
+                <h2>Artificial Intelligence (EECS 492)</h2>
+                <h4>University of Michigan<h4>
+                <h6>January 2016 &mdash; May 2016<span>Ann Arbor, MI</span><h6>
+            </header>
+            <p>
+                Provided assistance on homework and programming assignments through weekly office hours. Managed student grades and the online student question and answer forum (Piazza).
+            </p>
+        </div>
+        <div class="col-xs-6">
+            <span class="image fit"><img src="/static/images/umich.jpg" alt="" /></span>
         </div>         
     </div>
 </div>
+
+<div id="soartech" class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <header class="major">            
+                <h2>Software Engineering Intern</h2>
+                <h4>Soar Technology, Inc.<h4>
+                <h6>October 2015 &mdash; December 2015<span>Ann Arbor, MI</span><h6>
+            </header>
+            <p>
+                Implemented a tool to synchronize data between a Java and Web application for scenario based quiz delivery software. Added functionality to convert between file formats and upload quizzes to a server.
+            </p>
+        </div>
+        <div class="col-xs-6">
+            <span class="image fit"><img src="/static/images/soartech.jpg" alt="" /></span>
+        </div>         
+    </div>
+</div>
+
+<div id="newworldsystems" class="container">
+    <div class="row">
+        <div class="col-xs-8">
+            <header class="major">            
+                <h2>Solution Consulting Intern</h2>
+                <h4>New World Systems<h4>
+                <h6>May 2015 &mdash; August 2015<span>Troy, MI</span><h6>
+            </header>
+            <p>
+                Worked with a team of interns to design a solution for police field investigations and implement the solution. The team overcame technical barriers and regularly discussed with product owners to revise the design during development. The team built essential development skills such as code revisions and the agile methodology along with technical skills such as AngularJS and Cordova.
+            </p>
+        </div>
+        <div class="col-xs-4">
+            <span class="image-small"><img src="/static/images/newworldsystems.png" alt="" /></span>
+        </div>         
+    </div>
+</div>
+
+<div id="frib" class="container">
+    <div class="row">
+        <div class="col-xs-8">
+            <header class="major">            
+                <h2>Controls and Computing Technical Aide for</h2>
+                <h2>Facility of Rare Isotope Beams</h2>
+                <h4>Michigan State University<h4>
+                <h6>May 2014 &mdash; August 2014<span>East Lansing, MI</span><h6>
+            </header>
+            <p>
+                Developed Java tools for physicists and controls engineers to convert between data types using JSON. Supported existing libraries from several universities to standardize metadata with scalars, arrays, and tables datatypes.
+            </p>
+        </div>
+        <div class="col-xs-4">
+            <span class="image-small"><img src="/static/images/frib.png" alt="" /></span>
+        </div>         
+    </div>
+</div>
+
+<div id="clarkstonschools" class="container">
+    <div class="row">
+        <div class="col-xs-8">
+            <header class="major">            
+                <h2>Pupil Accounting Technician</h2>
+                <h4>Clarkston Community Schools<h4>
+                <h6>May 2012 &mdash; August 2013<span>Clarkston, MI</span><h6>
+            </header>
+            <p>
+                Managed the student database system through SQL queries and updates. Created reports and used SPSS to perform statistical analysis on student demographics, transcripts, and mailing lists for State of Michigan reporting.
+            </p>
+        </div>
+        <div class="col-xs-4">
+            <span class="image-small"><img src="/static/images/clarkston.gif" alt="" /></span>
+        </div>         
+    </div>
+</div>
+<!-- ================================================================================================================== -->
+
 
 {% endblock %}

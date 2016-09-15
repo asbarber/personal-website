@@ -11,6 +11,10 @@
 		font-family: "Source Sans Pro", Helvetica, sans-serif;		    		
 	}
 
+	a, a:hover, a:visited, a:focus, a:active{
+		text-decoration: none;
+	}
+
 	.main {
 		-moz-osx-font-smoothing: grayscale;
 		-webkit-font-smoothing: antialiased;
@@ -104,6 +108,7 @@
 	    background-image: url("../images/overlay0.png"), url("../images/overlay1.svg"), linear-gradient(45deg, #0275d8, #515b67 50%, #f4f5f7 95%);
 	    background-position: top left,	center center,	center center;
 	    background-size: auto,	cover,	cover;
+	    margin-top: 40px;
 	}
 
 	.icons-container {
@@ -200,12 +205,57 @@
 			.image.fit img {
 				width: 100%;
 			}
+
+	.image-small img {
+		width: 60%;
+		display: block;
+		margin: auto;
+		border-style: solid;
+		border-width: medium;
+		border-radius: 25px;
+	}
+
+	.image-bio img {
+		width: 60%;
+		display: block;
+		margin: auto;
+		border-radius: 25px;
+	}
 /* ************************************************************************* */
 
+
+/* ABOUT ME */
+/* ************************************************************************* */
+.resume {
+	text-align: center; 
+	margin-top: 20px;
+}
+/* ************************************************************************* */
+
+
+/* BLOCK CONTENT */
+/* ************************************************************************* */
+.container {
+	margin-top: 40px;
+}
+
+.container ul {
+	padding-left: 40px;
+}
 
 header.major > h2 {
 	font-weight: bold;
 	margin-bottom: 0;
+}
+
+header.major > h4 {
+	color: #37c;	
+    /*font-weight: bold;*/
+}
+
+header.major > h6 {
+    color: #5e9516;
+    /*font-weight: bold;*/
 }
 
 header.major > h6 > span:before {
@@ -222,3 +272,4 @@ header.major:after {
     width: 6em;
     margin-bottom: 6px;
 }
+/* ************************************************************************* */
