@@ -1,4 +1,3 @@
-from connect import *
 from cv import *
 from home import *
 from passions import *

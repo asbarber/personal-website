@@ -10,7 +10,7 @@ is_dev_run = __name__ == "__main__"
 config = dev_config if is_dev_run else prod_config
 app = Flask(__name__, template_folder=config["template_folder"])
 
-blueprints = [controllers.connect, controllers.cv, controllers.home, controllers.passions, controllers.portfolio]
+blueprints = [controllers.cv, controllers.home, controllers.passions, controllers.portfolio]
 for blueprint in blueprints:
 	app.register_blueprint(blueprint)
 # -----------------------------------------------------------------------------
@@ -21,22 +21,3 @@ for blueprint in blueprints:
 if is_dev_run:
 	app.run(host=config['host'], port=config['port'], debug=config['debug'])
 # -----------------------------------------------------------------------------
-
-
-# Aaron Barber
-	# What I've done so far
-# CV 
-	# Short
-	# Full
-	# Transcript
-# Portfolio
-	# Projects with youtube videos
-# Passions
-	# Videos
-	# Running
-	# Photos
-# Connect
-	# mail
-	# github
-	# LinkedIn
-	# Youtube

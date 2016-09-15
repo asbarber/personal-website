@@ -45,20 +45,22 @@ sudo a2ensite app.conf
 # -----------------------------------------------------------------------------
 
 
-# CREATE VIRTUAL ENVIRONMENT 
-# -----------------------------------------------------------------------------
-sudo virtualenv venv
-source venv/bin/activate
-sudo pip install -r requirements.txt
-# -----------------------------------------------------------------------------
-
-
 # CLONE SOURCE
 # -----------------------------------------------------------------------------
 cd /var/www
 sudo git clone https://github.com/asbarber/personal-website app
 # alternatively:
 # 	sudo git pull https://github.com/asbarber/personal-website app
+# 	sudo git clone -b <branch> https://github.com/asbarber/personal-website.git app
+# -----------------------------------------------------------------------------
+
+
+# CREATE VIRTUAL ENVIRONMENT 
+# -----------------------------------------------------------------------------
+cd /var/www/app
+sudo virtualenv venv
+source venv/bin/activate
+sudo pip install -r requirements.txt
 # -----------------------------------------------------------------------------
 
 
