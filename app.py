@@ -22,7 +22,7 @@ if is_dev_run:
 	app.run(host=config['host'], port=config['port'], debug=config['debug'])
 # -----------------------------------------------------------------------------
 
-# TODO
-# home.html - fix links to AVE and Course Scheduler
-# home.html - GSI
-# home.html - read content and update
+
+# TODO List
+# find all TODOs and complete
+# read content and update

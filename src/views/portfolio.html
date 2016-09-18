@@ -2,4 +2,326 @@
 
 {% block content %}
 
+<div class="icons-container">
+    <ul>
+        <li><a href="#research" class="fa-2x fa-bookmark"> <span>Research</span></a></li>
+        <li><a href="#projects" class="fa-2x fa-bookmark"> <span>Projects</span></a></li>
+        <li><a href="#otherprojects" class="fa-2x fa-bookmark"> <span>All Projects</span></a></li>
+    </ul>
+</div>
+
+
+<!-- Research Experience -->
+<!-- ================================================================================================================== -->
+<div id="research" class="header-container">
+    <header class="major">            
+        <h1>Research Experience</h1>
+    </header>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <header class="major">            
+                <h2>Lock Lock Who's There:</h2>
+                <h2>Reverse Engineering a Smart Lock</h2>
+                <h4>University of Michigan<h4>
+                <h6>Winter 2016<span><a href="/static/res/lock.pdf" target="_blank" class="fa-file-text-o"> <span>Paper</span></a></span><h6>
+            </header>
+            <p>
+                The rise of the Internet of Things has prompted lock manufacturers to integrate connectivity into their products. These new smart locks promise to offer many convenience and security features, such as time limited keys, keyless entry, and audit logs. However, locks are commonly the primary line of defense for most homes and businesses, and the added complexity these systems introduce has the potential to introduce many serious vulnerabilities.
+            <p>
+            </p>
+                In the paper, we select a very popular smart lock and perform an in depth security audit of it’s firmware, authentication protocol, and mobile app. We present several practical attacks that can be performed against this device, including a backdoor that is able to provide on-demand surreptitious entry and a malicious mobile app that will steal the user’s credentials.
+            </p>            
+        </div>
+        <div class="col-xs-3">
+            <span class="image fit"><img src="/static/images/research/lock1.png" alt="" /></span>
+        </div>
+        <div class="col-xs-3">
+            <span class="image fit"><img src="/static/images/research/lock2.png" alt="" /></span>       
+        </div>        
+    </div>
+</div>
+
+<div id="TODO" class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <header class="major">            
+                <h2>Data Integration in Real-Time</h2>
+                <h4>University of Michigan<h4>
+                <h6>Winter 2015<span><a href="https://github.com/diirt/diirt" target="_blank" class="fa-github"> <span>GitHub</span></a></span><h6>
+            </header>
+            <p>
+                The data integration in real-time (diirt) open source project aims to provide a platform to gather data from multiple sources (control systems, web sources, and databases) in real-time, aggregate them, and serve them either through UI or programmatic access.
+            </p>    
+            <p>
+                I rewrote a diirt service library to allow user functions to be wrapped and executed either sychronously or asynchronously. Additionally, I refactored existing documentation that was provided both to developers and to users.
+            </p>        
+        </div>       
+        <div class="col-xs-6">
+            <header class="major">            
+                <h2>Graphene</h2>
+                <h4>University of Michigan<h4>
+                <h6>Fall 2013 &mdash; Winter 2014<span><a href="https://github.com/diirt/diirt/tree/master/graphene" target="_blank" class="fa-github"> <span>GitHub</span></a></span><h6>
+            </header>
+            <p>
+                During my first year at University of Michigan, I participated in the Undergradaute Research Opportunity Program. I contributed to the open source Graphene project, a module of the the diirt project. Graphene is a real-time Java graphing library, used to display data from large physics experiments.
+            </p>
+            <p>
+                Another student and I developed sparkline and multi-line graph rendering capabilities, allowing rendering of large datasets as a sparkline graph or multi-line graph in under twenty milliseconds. I wrote a profiling suite to monitor the rendering efficiency of varying graph types with varying dataset sizes.
+            </p>
+        </div>         
+    </div>    
+</div>
+
+<!-- ================================================================================================================== -->
+
+<!-- Highlighted Project Experience -->
+<!-- ================================================================================================================== -->
+<!-- AVE -->
+<!-- Network File Server -->
+<!-- MHacks V -->
+<!-- Vision Processing Development -->
+<!-- Course Scheduler -->
+
+<div id="projects" class="header-container">
+    <header class="major">            
+        <h1>Project Experience</h1>
+    </header>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div id="ave" class="col-xs-6">
+            <header class="major">            
+                <h2>Assisted Video Editor</h2>
+                <h4>Winter 2016<h4>
+                <h6><a href="/static/res/ave.pdf" target="_blank" class="fa-file-text-o"> <span>Presentation</span></a></h6>
+            </header>
+            <p>
+                Assisted Video Editor (AVE) is a desktop application and companion iOS application for simplified video editing. The project's target audience was individuals with cerebral palsy. In particular, we targeted a student who only has fine motor control in one foot. The video editiing industry currently lacks software designed for ease of use. AVE provides creative powers to all individuals. The AVE application allows users to combine videos, photos, and audio together and share their content with the world.
+            </p>            
+            <p>
+                AVE is a python desktop solution that imports photos, videos, and audio. A simplistic editor user interface allows the user to set an order for the imported content. The ordered content will be combined into a single video, with checkboxes allowing a user to upload the combined video onto social media services such as YouTube, Facebook, and Twitter. The editor also provides the option to <a href="TODO">automatically arrange</a> media content, sychronizing the transition of clips with the beat of music.
+            </p>
+            <p>
+                The companion swift iOS solution is provided to improve ease of access. A user connects to an active instance of the desktop application, and can transfer photos and videos from their iOS device to the desktop application (which performs video processing). This solution design was implemented in order to allow multiple users on iOS devices to collaborate and combine their videos into one shared video.
+            </p>
+        </div>
+        <div class="col-xs-6">
+            <header class="major">            
+                <h2>Network File Server</h2>
+                <h4>Fall 2015<h4>
+            </header>
+            <p>
+                TODO
+            </p>            
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <iframe width="435" height="306" src="https://www.youtube.com/embed/zLUv92LSEjs" frameborder="0" allowfullscreen></iframe>            
+            <header class="major">            
+                <h2>My Own Transaction</h2>
+                <h4>Winter 2015<span>MHacks V</span><h4>
+                <h6><a href="http://devpost.com/software/myowntransaction" target="_blank" class="fa-file-text-o"> <span>Website</span></a><span><a href="http://devpost.com/software/myowntransaction" target="_blank" class="fa-github"> <span>Github</span></a></span></h6>                    
+            </header>
+            <p>
+                TODO
+            </p>            
+        </div>
+        <div class="col-xs-6">
+            <header class="major">            
+                <h2>Vision Processing Development</h2>
+                <h4>Winter 2015<h4>
+            </header>
+            <p>
+                TODO
+            </p>            
+        </div>        
+    </div>    
+</div>
+
+<div class="container">
+    <div class="row">
+        <div id="course-scheduler" class="col-xs-6">
+            <header class="major">            
+                <h2>Course Scheduler</h2>
+                <h4>Fall 2013<h4>
+            </header>
+            <p>
+                TODO
+            </p>            
+        </div>        
+    </div>
+</div>
+<!-- ================================================================================================================== -->
+
+
+<!-- All Project Experience -->
+<!-- ================================================================================================================== -->
+<div id="otherprojects" class="header-container">
+    <header class="major">            
+        <h1>Other Projects</h1>
+    </header>
+</div>
+
+<!-- Cross Streams                      Summer 2016 -->
+<!-- Online Photo Album Service         Fall 2015 -->
+<!-- NetBeans Plugin Development        Winter 2015 -->
+<!-- Spaceship Racing Game              Winter 2015 -->
+<!-- Microsoft Application Challenge    Fall 2014 -->
+<!-- Meeting of The Minds Hackathon     Fall 2014 -->
+<!-- Split Decision Racing              Winter 2014 -->
+<!-- Power Compressor Pro               Fall 2013 -->
+<!-- RYB                                Fall 2013 -->
+<!-- Folder Manager                     Summer 2013 -->
+<!-- GridWorld                          Winter 2013 -->
+<!-- 3D Java Block Game                 Winter 2013 -->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <header class="major">            
+                <h2>Cross Streams</h2>
+                <h4>Summer 2016<h4>
+            </header>
+            <p>
+                TODO
+            </p>            
+        </div>
+        <div class="col-xs-6">
+            <header class="major">            
+                <h2>Photo Album Service</h2>
+                <h4>Fall 2015<h4>
+            </header>
+            <p>
+                TODO
+            </p>            
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <header class="major">            
+                <h2>NetBeans Plugin Development</h2>
+                <h4>Winter 2015<h4>
+            </header>
+            <p>
+                TODO
+            </p>            
+        </div>
+        <div class="col-xs-6">
+            <header class="major">            
+                <h2>Spaceship Racing Game</h2>
+                <h4>Winter 2015<h4>
+            </header>
+            <p>
+                TODO
+            </p>            
+        </div>            
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <header class="major">            
+                <h2>Microsoft Application Challenge</h2>
+                <h4>Fall 2014<h4>
+            </header>
+            <p>
+                TODO
+            </p>            
+        </div>          
+        <div class="col-xs-6">
+            <header class="major">            
+                <h2>Meeting of The Minds Hackathon</h2>
+                <h4>Fall 2014<h4>
+            </header>
+            <p>
+                TODO
+            </p>            
+        </div>     
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <header class="major">            
+                <h2>Split Decision Racing</h2>
+                <h4>Winter 2014<h4>
+            </header>
+            <p>
+                TODO
+            </p>            
+        </div>          
+        <div class="col-xs-6">
+            <header class="major">            
+                <h2>Power Compressor Pro</h2>
+                <h4>Fall 2013<h4>
+            </header>
+            <p>
+                TODO
+            </p>            
+        </div>      
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <header class="major">            
+                <h2>RYB</h2>
+                <h4>Fall 2013<h4>
+            </header>
+            <p>
+                TODO
+            </p>            
+        </div>              
+        <div class="col-xs-6">
+            <header class="major">            
+                <h2>Folder Manager</h2>
+                <h4>Summer 2013<h4>
+            </header>
+            <p>
+                TODO
+            </p>            
+        </div>      
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <header class="major">            
+                <h2>GridWorld</h2>
+                <h4>Winter 2013<h4>
+            </header>
+            <p>
+                TODO
+            </p>            
+        </div>     
+        <div class="col-xs-6">
+            <header class="major">            
+                <h2>3D Java Block Game</h2>
+                <h4>Winter 2013<h4>
+            </header>
+            <p>
+                TODO
+            </p>            
+        </div> 
+    </div>
+</div>
+<!-- ================================================================================================================== -->
+
+
 {% endblock %}
