@@ -1,3 +1,9 @@
+# KEEP PRIVATE THINGS PRIVATE
+private.py
+
+# Mac
+.DS_STORE
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

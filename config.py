@@ -10,3 +10,9 @@ dev_config = {
 }
 
 config = None
+
+db = {
+	'engr101': {
+		'url': '#'
+	}
+}
