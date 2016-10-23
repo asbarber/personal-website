@@ -29,3 +29,8 @@ def postEngr101Admin():
 		db['engr101']['url'] = url
 
 	return getEngr101Admin()
+
+@engr101.route('/engr101/review', methods= ['GET'])
+def getEngr101Review():
+	return flask.render_template("engr101/review.html")
+

@@ -54,6 +54,14 @@ sudo git clone https://github.com/asbarber/personal-website app
 # 	sudo git clone -b <branch> https://github.com/asbarber/personal-website.git app
 # -----------------------------------------------------------------------------
 
+# COPY PRIVATE FILES
+# -----------------------------------------------------------------------------
+# Run first command on MAC
+# Run second command on PI
+scp private.py pi:/home/pi 
+sudo mv /home/pi/private.py /var/www/app
+# -----------------------------------------------------------------------------
+
 
 # CREATE VIRTUAL ENVIRONMENT 
 # -----------------------------------------------------------------------------
