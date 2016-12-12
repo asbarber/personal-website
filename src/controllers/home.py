@@ -6,3 +6,6 @@ home = flask.Blueprint('home', __name__, template_folder="views")
 @home.route('/home', methods = ['GET'])
 def getHome():
 	return flask.render_template("home.html")
+
+
+

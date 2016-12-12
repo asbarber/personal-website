@@ -7,8 +7,9 @@ engr101 = flask.Blueprint('engr101', __name__, template_folder="views")
 
 @engr101.route('/engr101', methods = ['GET'])
 def getEngr101():
+	selfUrl = "asbarber.us/engr101"
 	url = db.get('engr101').get('url')
-	return flask.render_template("engr101/engr101.html", url=url)
+	return flask.render_template("engr101/engr101.html", url=url, selfUrl=selfUrl)
 
 
 @engr101.route('/engr101/admin', methods = ['GET'])

@@ -325,4 +325,14 @@
 	    outline: none;
 	    cursor: pointer;
 	}
+
+	.major-link > h1 {
+		font-weight: bold;
+		font-size: 80px;
+		text-align: center;
+	    color: #ff656c;
+
+	    margin-top: 0px;
+	    padding-top: 0px;
+	}
 /* ************************************************************************* */

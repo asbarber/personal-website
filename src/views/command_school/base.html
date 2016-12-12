@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+	<!-- META -->
+	<!-- ====================================================================== -->
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Aaron Barber">
+	<title></title>	
+	<!-- ====================================================================== -->
+
+	<!-- CSS -->
+	<!-- ====================================================================== -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/base.css') }}">
+	<link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='apps/command_school/styles/command_school.css') }}">
+	<!-- ====================================================================== -->
+</head>
+<body>
+	<!-- NAVBAR -->
+	<!-- ====================================================================== -->	
+	<nav class="navbar navbar-dark bg-primary nav-container">
+		<a class="navbar-brand">Command School</a>
+		<ul class="nav navbar-nav pull-md-right">
+			<li class="nav-item">
+				<a class="nav-link" href="/cs">Home</a>
+			</li>
+		</ul>
+	</nav>
+	<!-- ====================================================================== -->
+
+
+	<!-- MAIN -->
+	<!-- ====================================================================== -->
+	<div class="main clearfix">
+		{% block content %}{% endblock %}
+	</div>
+	<div class="clearer"></div>
+	<!-- ====================================================================== -->
+
+
+
+	<!-- SCRIPTS -->
+	<!-- ====================================================================== -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="/static/apps/command_school/js/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/static/js/base.js"></script>
+
+	{% block scripts %}{% endblock %}
+	<!-- ====================================================================== -->
+</body>
+</html>
