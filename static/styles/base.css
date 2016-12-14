@@ -335,4 +335,10 @@
 	    margin-top: 0px;
 	    padding-top: 0px;
 	}
+
+	.video-container {
+		margin: auto;
+		width: 80%;
+		margin-bottom: 80px;
+	}	
 /* ************************************************************************* */
