@@ -1,0 +1,8 @@
+TODO
+Guess the product of two dice!
+player1 guess: <i>18</i>
+player2 guess: <i>32</i>
+dice1 = 6
+dice2 = 4
+product = 24
+player1 won!

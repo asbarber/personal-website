@@ -1,0 +1,5 @@
+Write a C++ program to determine whether the user is old enough to vote in Michigan.
+
+Your program should prompt the user for their age in years.
+Any individual who is 18 years or older is eligible to vote in the U.S.
+Your program should print a message indicating whether the individual CAN or CANNOT vote.

@@ -1,0 +1,10 @@
+Write a program that simulates rolling two dice, allows two users to guess the product the two dice, and prints which user was closer.
+
+Assume there are two dice that contain values from 1 to 6.
+Assume the players are called player1 and player2.
+Print the player who guessed closer to the product (or print that there was a tie).
+
+Grammar Note: "dice" is actually plural and the singular of "dice" is actually "die". For understanding purposes, I used "dice" to mean both plural and singular
+
+Random:
+To complete this problem, we need to simulate randomness. I advise using the <a href="http://www.cplusplus.com/reference/cstdlib/rand/">rand()</a> function. To use rand, you must seed it first (typically you would seed based on the time to obtain true random sequences, but we use a constant number to provide the same random sequence).

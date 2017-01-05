@@ -1,0 +1,12 @@
+Write a program to calculate the area and circumference of a circle with a given radius.
+
+Allow the user to input the radius in meters.
+
+The following is the equation to calculate the area of a circle (<i>A</i>) given the radius (<i>r</i>):
+<b><i>A = &pi;r<sup>2</sup></i></b>
+
+The following is the equation to calculate the circumference of a circle (<i>L</i>) given the radius (<i>r</i>):
+<b><i>L = 2&pi;r</i></b>
+
+
+Hint: for &pi;, create a <i>const</i> variable with the value 3.1415. Alternatively, you could look up how to use <i>M_PI</i> from the cmath library.

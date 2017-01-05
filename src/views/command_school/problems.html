@@ -1,0 +1,32 @@
+{% extends "command_school/base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-8">
+			{% for problem in problems %}
+				<div class="problem-box">
+					<div class="top-right">
+						{% if user.hasCompleted(problem.id) %}
+							<i class="fa fa-check-circle-o fa-2x" aria-hidden="true"></i>
+						{% else %}
+							<i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+						{% endif %}
+					</div>
+
+					<div class="title">
+						<i class="fa {{problem.icon}}" aria-hidden="true"></i> 
+						<a href="/cs/problem?id={{problem.id}}">{{problem.title}}</a>
+					</div>
+
+					<div>
+						Skills: <i>{% for skill in problem.skills %} {{skill}} {% endfor %}</i>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
+{% endblock %}

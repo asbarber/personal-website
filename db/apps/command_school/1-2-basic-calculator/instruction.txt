@@ -1,0 +1,18 @@
+Write a program to act as a basic calculator.
+
+Your calculator should allow users to enter one simple expression. An expression is defined as:
+<b><i>lhs operator rhs</i></b>
+
+<b>lhs</b> is the left-hand-side number in the expression
+<b>rhs</b> is the right-hand-side number in the expression
+<b>operator</b> is a simple arithmetic operation; our calculator supports <b>+, -, /, *</b>
+ 
+The following expressions are valid:
+<pre>
+1 + 2
+-1.2 - 2
+2.5 * 10
+1.0 / 2
+</pre>
+
+If the user enters an invalid expression, warn the user of their mistake.

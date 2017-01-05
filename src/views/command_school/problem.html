@@ -1,0 +1,69 @@
+{% extends "command_school/base.html" %}
+
+{% block content %}
+
+<div id="links">
+	<a href="/cs/problems">All Problems</a> > {{problem.title}}
+	<a class="nav" href="/cs/problem/next?id={{problem.id}}">&rarr;</a>
+	<a class="nav" href="/cs/problem/prev?id={{problem.id}}">&larr;</a>
+</div>
+
+<div id="problem" class="header-container-tight">
+	<header class="major">            
+		<h1>Problem</h1>
+	</header>
+	<p class="instruction">{{instruction | safe}} </p>
+</div>
+
+{% if samples|length > 0 %}
+	<div id="tests" class="header-container-tight">
+		<header class="major">            
+			<h1>Examples</h1>
+		</header>
+		{% for sample in samples %}
+			<pre class="terminal">{{sample | safe}}</pre>
+		{% endfor %}
+	</div>
+{% endif %}
+
+<div id="code" class="header-container-tight">
+	<header class="major">            
+		<h1>Editor</h1>
+	</header>
+	<div id="editor">{{starterCode}}</div>
+
+	<div class="submit">
+	   <button onclick="onSubmitCode()" id="submitCode" type="submit" class="btn btn-primary">Submit</button>
+	   <i id="loadingIcon" class="fa fa-cog fa-spin fa-2x fa-fw"></i>
+	</div>
+</div>
+
+<div id="results" class="header-container-tight">
+	<header class="major">            
+		<h1>Results</h1>
+	</header>
+
+	<p id="compileResults"></p>
+	<p id="executeResults"></p>
+</div>
+
+<div id="solution" class="header-container-tight">
+	<header class="major">            
+		<h1>Solution</h1>
+	</header>
+	<div id="solutionEditor">{{solution}}</div>	
+</div>
+
+
+<div id="links-bottom">
+	<a href="/cs/problems">All Problems</a> > {{problem.title}}
+	<a class="nav" href="/cs/problem/next?id={{problem.id}}">&rarr;</a>
+	<a class="nav" href="/cs/problem/prev?id={{problem.id}}">&larr;</a>
+</div>
+
+{% endblock %}
+
+
+{% block scripts %}
+<script src="/static/apps/command_school/js/editor.js"></script>
+{% endblock %}

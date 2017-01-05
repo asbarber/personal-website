@@ -1,0 +1,8 @@
+TODO
+Guess the product of two dice!
+player1 guess: <i>12</i>
+player2 guess: <i>20</i>
+dice1 = 4
+dice2 = 4
+product = 16
+tie!

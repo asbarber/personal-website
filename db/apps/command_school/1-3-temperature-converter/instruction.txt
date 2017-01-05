@@ -1,0 +1,6 @@
+Write a program that can convert temperature from Fahrenheit to Celsius and Celsius to Fahrenheit.
+
+Your temperature converter should allow the user to enter a temperature AND the units associated with that temperature. Users can enter the character <b>'c'</b> or the character <b>'f'</b> to indicate units. You can assume that users enter valid input.
+
+The following is the equation to convert Fahrenheit to Celsius:
+<b><i>F = C * (9/5) + 32</i></b>

@@ -1,0 +1,4 @@
+Write a program to calculate the volume of a cylinder.
+
+The following is the equation to calculate the volume of a cylinder (<i>V</i>) given the width (<i>w</i>) and height (<i>h</i>):
+<b><i>V = &pi;(w/2)<sup>2</sup>h</i></b>
